@@ -67,7 +67,7 @@ Each `dayXX/` folder has its own short notes and code for that day. The four maj
 | Day | Topic | Notes |
 |---|---|---|
 | 1 | Python Core: Data Types & Control Flow | ✅ |
-| 2 | Python Core: Functions, Comprehensions & File I/O | |
+| 2 | Python Core: Functions, Comprehensions & File I/O |✅ |
 | ... | | |
 
 <!-- Add a row per day as you go. Keep it short — link to the day folder if you want detail. -->
