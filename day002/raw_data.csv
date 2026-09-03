@@ -1,0 +1,9 @@
+Name, Age, City, Salary
+ Aarav ,25, Mumbai ,50000
+Isha,  , Delhi,45000
+Rohan,30,Pune, 
+ , 28, Bangalore,60000
+Meera,twenty,Chennai,55000
+Farhan,35, ,48000
+Divya,29,Mumbai,not_a_number
+Sneha,,Delhi,52000
