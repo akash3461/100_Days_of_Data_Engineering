@@ -1,24 +1,14 @@
-"""
-Script 6 (Capstone): Raw CSV Parser & Cleaner
-Topics combined: Functions & default args, comprehensions, modules (csv),
-                  exception handling, file I/O, clean-I/O function design
+"""Read a messy CSV, clean its values, and write a new CSV."""
 
-Goal: Read a messy CSV, clean whitespace, handle missing/invalid values,
-      and return clean structured data (list of dicts).
-"""
+import csv
 
-import csv   # built-in module import
-
-
-# ---------- Clear, single-purpose I/O functions ----------
 
 def read_csv_file(filepath):
-    """Reads a CSV file and returns a list of raw dict rows.
-    Keeps this function's ONLY job as reading — no cleaning here."""
+    """Return the rows in a CSV file as dictionaries."""
     try:
         with open(filepath, "r") as f:
             reader = csv.DictReader(f)
-            rows = [row for row in reader]   # list comprehension
+            rows = [row for row in reader]
         return rows
     except FileNotFoundError:
         print(f"Error: File '{filepath}' not found.")
@@ -34,8 +24,7 @@ def clean_string(value):
 
 
 def clean_number(value, value_type=int, default=None):
-    """Safely converts a string to int/float, using try/except.
-    Returns `default` if conversion fails or value is missing."""
+    """Convert a value to a number, or return the fallback."""
     value = clean_string(value)
     if value is None:
         return default
@@ -46,9 +35,7 @@ def clean_number(value, value_type=int, default=None):
 
 
 def clean_row(raw_row):
-    """Takes one raw CSV row (dict) and returns a cleaned dict.
-    This is the 'clear function' that does ONE job: cleaning."""
-    # Keys may have leading/trailing spaces too (from header), so normalize
+    """Clean one row and fill in defaults for missing values."""
     normalized = {key.strip(): value for key, value in raw_row.items()}
 
     cleaned = {
@@ -61,8 +48,7 @@ def clean_row(raw_row):
 
 
 def clean_dataset(raw_rows):
-    """Cleans an entire list of raw rows using clean_row().
-    Uses a list comprehension to keep it short and readable."""
+    """Clean every row in a dataset."""
     return [clean_row(row) for row in raw_rows]
 
 
@@ -84,11 +70,11 @@ def write_clean_csv(filepath, cleaned_rows):
 
 
 def summarize(cleaned_rows):
-    """Quick summary report using comprehensions + built-ins."""
+    """Print a few basic statistics for the cleaned rows."""
     valid_ages = [row["age"] for row in cleaned_rows if row["age"] is not None]
     valid_salaries = [row["salary"] for row in cleaned_rows if row["salary"] > 0]
 
-    print("\n----- Data Summary -----")
+    print("\nData Summary")
     print("Total rows:", len(cleaned_rows))
     print("Rows with valid age:", len(valid_ages))
     print("Rows with valid salary:", len(valid_salaries))
@@ -97,8 +83,6 @@ def summarize(cleaned_rows):
     if valid_salaries:
         print(f"Average salary: {sum(valid_salaries) / len(valid_salaries):.2f}")
 
-
-# ---------- Main program ----------
 
 def main():
     input_file = "raw_data.csv"
@@ -114,7 +98,7 @@ def main():
 
     cleaned_rows = clean_dataset(raw_rows)
 
-    print("\n----- Cleaned Data -----")
+    print("\nCleaned Data")
     for row in cleaned_rows:
         print(row)
 

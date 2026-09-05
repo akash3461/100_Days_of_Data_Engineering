@@ -34,7 +34,7 @@ No tutorials-only approach here. Every phase ends in something built, not just s
 | 4 | Lakehouse, Docker, CI/CD, Data Quality | 61–80 | ⬜ Not Started |
 | 5 | Capstone Project, System Design, Interview Prep | 81–100 | ⬜ Not Started |
 
-**Current Day:** `Day 1` — Python Core: Data Types & Control Flow
+**Current Day:** `Day 5` — Pandas for Data Engineering
 
 <!--
 Update the table above as you progress. Simple way to track weekly:
@@ -67,7 +67,10 @@ Each `dayXX/` folder has its own short notes and code for that day. The four maj
 | Day | Topic | Notes |
 |---|---|---|
 | 1 | Python Core: Data Types & Control Flow | ✅ |
-| 2 | Python Core: Functions, Comprehensions & File I/O |✅ |
+| 2 | Python Core: Functions, Comprehensions & File I/O | ✅ |
+| 3 | Production-Style Python: Type Hints, pathlib, Logging, Config | ✅ |
+| 4 | OOP & Reusable Code: Classes, Objects, Context Manager | ✅ |
+| 5 | Pandas for Data Engineering: Cleaning & Aggregation | ✅ |
 | ... | | |
 
 <!-- Add a row per day as you go. Keep it short — link to the day folder if you want detail. -->

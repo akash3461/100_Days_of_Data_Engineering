@@ -1,9 +1,5 @@
-"""
-Script 4: Exception Handling
-Topics: try/except, multiple except blocks, else, finally, raising exceptions
-"""
+"""Practice handling and raising common exceptions."""
 
-# Basic try/except
 def safe_divide(a, b):
     try:
         result = a / b
@@ -11,18 +7,15 @@ def safe_divide(a, b):
         print("Error: Cannot divide by zero.")
         return None
     else:
-        # runs only if no exception occurred
         print("Division successful.")
         return result
     finally:
-        # always runs, error or not
         print(f"Attempted to divide {a} by {b}\n")
 
 print(safe_divide(10, 2))
 print(safe_divide(10, 0))
 
 
-# Handling multiple exception types
 def convert_to_int(value):
     try:
         return int(value)
@@ -38,7 +31,6 @@ print(convert_to_int("abc"))
 print(convert_to_int(None))
 
 
-# Catching a general exception (use sparingly, good for logging unknowns)
 def risky_lookup(dictionary, key):
     try:
         return dictionary[key]
@@ -54,7 +46,6 @@ print(risky_lookup(data, "name"))
 print(risky_lookup(data, "city"))
 
 
-# Raising your own exceptions
 def set_age(age):
     if age < 0:
         raise ValueError("Age cannot be negative.")

@@ -1,9 +1,5 @@
-"""
-Script 2: Student Grade Calculator
-Topics used: Lists, Dictionaries, Conditionals (if/elif/else), Loops (for)
-"""
+"""Calculate averages and grades for a few students."""
 
-# Dictionary storing student name -> list of marks
 students = {
     "Aarav": [85, 90, 78],
     "Isha": [55, 60, 40],
@@ -12,15 +8,13 @@ students = {
 }
 
 def calculate_average(marks_list):
-    # marks_list is a LIST of numbers
     total = 0
-    for mark in marks_list:  # LOOP
+    for mark in marks_list:
         total += mark
     return total / len(marks_list)
 
 
 def get_grade(average):
-    # CONDITIONALS to decide the grade
     if average >= 90:
         return "A+"
     elif average >= 75:
@@ -33,15 +27,13 @@ def get_grade(average):
         return "F (Fail)"
 
 
-# ---- Main Program ----
 print("Student Report Card")
 print("=" * 40)
 
-# Loop through dictionary (name = key, marks = value list)
 for name, marks in students.items():
     avg = calculate_average(marks)
     grade = get_grade(avg)
-    status = "Pass" if grade != "F (Fail)" else "Fail"  # inline conditional
+    status = "Pass" if grade != "F (Fail)" else "Fail"
 
     print(f"{name:<8} | Marks: {marks} | Avg: {avg:.1f} | Grade: {grade} | {status}")
 

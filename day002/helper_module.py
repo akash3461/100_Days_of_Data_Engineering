@@ -1,7 +1,4 @@
-"""
-helper_module.py
-A small custom module to demonstrate imports.
-"""
+"""A few functions used by the imports example."""
 
 PI = 3.14159
 
