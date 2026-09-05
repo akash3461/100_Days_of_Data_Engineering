@@ -1,0 +1,15 @@
+order_id,customer_name,product,category,quantity,price,order_date,region
+101, Aarav Sharma,Laptop,Electronics,1,55000,2026-01-05,North
+102,Isha Patel ,Mouse,Electronics,2,500,05/01/2026,South
+103,Rohan Verma,Notebook,Stationery,5,20,2026-01-06,North
+104,Meera Iyer,Laptop,electronics,1,54000,2026-01-07,West
+101, Aarav Sharma,Laptop,Electronics,1,55000,2026-01-05,North
+105,Farhan Khan,Pen,Stationery,,10,2026-01-08,South
+106,Divya Nair,Monitor,Electronics,1,,2026-01-09,East
+107,Sneha Reddy,Notebook,stationery,3,20,09-01-2026,North
+108,,Mouse,Electronics,2,500,2026-01-10,West
+109,Karan Mehta,Chair,Furniture,1,3500,2026-01-11,South
+110,Aarav Sharma,Pen,Stationery,10,10,2026-01-12,North
+111,Isha Patel,Laptop,Electronics,1,55000,2026-01-13,South
+112,Rohan Verma,Chair,furniture,2,3500,2026-01-14,North
+113,Meera Iyer,Monitor,Electronics,2,8000,invalid_date,West

@@ -1,0 +1,10 @@
+[
+    {"customer_name": "Aarav Sharma", "email": "aarav@example.com", "membership": "Gold"},
+    {"customer_name": "Isha Patel", "email": "isha@example.com", "membership": "Silver"},
+    {"customer_name": "Rohan Verma", "email": "rohan@example.com", "membership": "Gold"},
+    {"customer_name": "Meera Iyer", "email": "meera@example.com", "membership": "Bronze"},
+    {"customer_name": "Farhan Khan", "email": "farhan@example.com", "membership": "Silver"},
+    {"customer_name": "Divya Nair", "email": "divya@example.com", "membership": "Gold"},
+    {"customer_name": "Sneha Reddy", "email": "sneha@example.com", "membership": "Bronze"},
+    {"customer_name": "Karan Mehta", "email": "karan@example.com", "membership": "Silver"}
+]

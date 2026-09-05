@@ -1,0 +1,5 @@
+order_id,customer_name,product,category,quantity,price,order_date,region
+114,Aarav Sharma,Mouse,Electronics,1,500,2026-02-02,North
+115,Karan Mehta,Laptop,Electronics,1,56000,2026-02-03,South
+116,Divya Nair,Pen,Stationery,5,10,2026-02-04,East
+117,Sneha Reddy,Chair,Furniture,1,3500,2026-02-05,North
