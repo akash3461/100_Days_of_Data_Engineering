@@ -1,0 +1,56 @@
+{
+  "status": "ok",
+  "page": 1,
+  "results": [
+    {
+      "order_id": 201,
+      "customer": {
+        "name": "Aarav Sharma",
+        "membership": "Gold"
+      },
+      "items": [
+        {
+          "product": "Laptop",
+          "qty": 1,
+          "price": 55000
+        }
+      ],
+      "region": "North"
+    },
+    {
+      "order_id": 202,
+      "customer": {
+        "name": "Isha Patel",
+        "membership": "Silver"
+      },
+      "items": [
+        {
+          "product": "Mouse",
+          "qty": 2,
+          "price": 500
+        },
+        {
+          "product": "Keyboard",
+          "qty": 1,
+          "price": 1200
+        }
+      ],
+      "region": "South"
+    },
+    {
+      "order_id": 203,
+      "customer": {
+        "name": "Rohan Verma",
+        "membership": "Gold"
+      },
+      "items": [
+        {
+          "product": "Monitor",
+          "qty": 1,
+          "price": 8000
+        }
+      ],
+      "region": null
+    }
+  ]
+}
