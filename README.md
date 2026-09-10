@@ -34,7 +34,7 @@ No tutorials-only approach here. Every phase ends in something built, not just s
 | 4 | Lakehouse, Docker, CI/CD, Data Quality | 61–80 | ⬜ Not Started |
 | 5 | Capstone Project, System Design, Interview Prep | 81–100 | ⬜ Not Started |
 
-**Current Day:** `Day 5` — Pandas for Data Engineering
+**Current Day:** `Day 10` — Joins
 
 <!--
 Update the table above as you progress. Simple way to track weekly:
@@ -71,6 +71,11 @@ Each `dayXX/` folder has its own short notes and code for that day. The four maj
 | 3 | Production-Style Python: Type Hints, pathlib, Logging, Config | ✅ |
 | 4 | OOP & Reusable Code: Classes, Objects, Context Manager | ✅ |
 | 5 | Pandas for Data Engineering: Cleaning & Aggregation | ✅ |
+| 6 | NumPy & Data Formats: Arrays, CSV/JSON/Parquet | ✅ |
+| 7 | Mini Build #1 — Retail ETL Pipeline ([separate repo](https://github.com/akash3461/retail-etl-pipeline)) | ✅ |
+| 8 | SQL Fundamentals: SELECT, WHERE, ORDER BY, NULL Handling | ✅ |
+| 9 | Aggregation: GROUP BY, HAVING, Business Queries | ✅ |
+| 10 | Joins: INNER, LEFT, RIGHT, FULL OUTER, SELF, CROSS | ✅ |
 | ... | | |
 
 <!-- Add a row per day as you go. Keep it short — link to the day folder if you want detail. -->
